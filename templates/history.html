@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+<div class="container">
+    <div class="section">
+        <h2>Your History</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Month/Date</th>
+                    <th>Time</th>
+                    <th>Stock Name</th>
+                    <th>Shares</th>
+                    <th>Price</th>
+                    <th>Transaction Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for log in logs %}
+                <tr>
+                   <td>{{ log["month"] }}/{{ log["day"] }}</td>
+                   <td>{{ log["time"] }}</td>
+                   <td>{{ log["symbol"] }}</td>
+                   <td>{{ log["shares"] }}</td>
+                   <td>{{ log["price"] | usd }}</td>
+                   <td>{{ log["transaction_type"] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
