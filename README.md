@@ -5,7 +5,7 @@
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 ## About This Project
-- This app is project made for the CS50x week 8 course.
+- This app was project made for the CS50x week 8 course.
 - This app is a simple stock simulation app that allows user to check the price of a stock, buy stock, sell stock and check user's history. Sign in, log in and change password options are also included in this app
 
 # UI
